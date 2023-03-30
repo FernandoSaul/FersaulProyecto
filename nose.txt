@@ -1,0 +1,31 @@
+restalecer un router
+R1# CONFIGURE TERMINAL
+R1(config)#CONFIG-REGISTRER (NUM_REG)
+R1(config)#EXIT
+R1# WRITE ERASE
+R1# RELOAD
+NO 
+
+paso 2 configurar una direcciopn al router y la pc y tengan comunicacion 
+
+paso 3 HACER UNA COPIA DEL SISTEMA OPERATIVO
+flash:c2800nm-ipbase-mz.150-1.M4.bin
+
+Router#COPY flash:c2800nm-ipbase-mz.150-1.M4.bin
+Router#COPY flash:c2800nm-ipbase-mz.150-1.M4.bin TFTP
+escribir la ip del tftp 192.168.1.2
+escribir el nombre del SO c2800nm-ipbase-mz.150-1.M4.bin
+
+dar reload 
+erase flash:
+otro reload plis
+
+RECUPERAR  EL SO IOS
+roommon -1> IP_ADDRESS=192.168.1.1
+roommon -2>IP_SUBNET_MASK=255.255.255.0
+roommon -3>DEFAULT_GATEWAY=192.168.2.1
+roommon -4>TFTP_SERVER=192.168.1.2
+roommon -5>TFTP_FILE=c2800nm-ipbase-mz.150-1.M4.bin
+roommon -6>tftpdnld
+Y
+BOOT 

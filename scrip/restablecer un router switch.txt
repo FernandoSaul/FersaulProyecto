@@ -1,0 +1,7 @@
+restaurar un sw modo fabrica
+sw1# write erase
+sw1# reload
+switch# show vlan
+! borrar el vlan.dat+
+switch#delete flash:vlan.dat
+switch# reload

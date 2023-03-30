@@ -1,0 +1,3 @@
+switch: flash_init
+switch: dir flash:
+switch: copy xmodem: flash:c2950-i6k2l2q4-mz.121-22.EA14.bin

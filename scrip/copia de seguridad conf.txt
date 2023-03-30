@@ -1,0 +1,4 @@
+Copie este archivo de configuración al servidor TFTP
+R1# COPY RUNNING-CONFIG TFTP:
+R1#Address or name of remote host []? PONER IP TFTP
+R1#Destination filename [ce_2-confg]? PONER NOMBRE

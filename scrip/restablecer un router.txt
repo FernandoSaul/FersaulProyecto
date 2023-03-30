@@ -1,0 +1,7 @@
+restalecer un router
+R1# CONFIGURE TERMINAL
+R1(config)#CONFIG-REGISTER (NUM_REG)
+R1(config)#EXIT
+R1# WRITE ERASE
+R1# RELOAD
+NO 
